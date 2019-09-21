@@ -30,7 +30,7 @@ const w = new Discord.Client();
 const x = new Discord.Client();
 const y = new Discord.Client();
 const z = new Discord.Client();
-const a = "458997221170479124"
+const a = "507192062320443402"
 
 
 client.on("ready", () => {
