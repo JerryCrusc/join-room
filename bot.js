@@ -1,430 +1,131 @@
-﻿const Discord = require("discord.js");
-const queue = new Map();
+const Discord = require("discord.js");
 const client = new Discord.Client();
-const bot = new Discord.Client();
-const mtra9a = new Discord.Client();
-const ytdl = require('ytdl-core');
-const Bot = new Discord.Client();
-const b = new Discord.Client();
-const c = new Discord.Client();
-const d = new Discord.Client();
-const e = new Discord.Client();
-const f = new Discord.Client();
-const g = new Discord.Client();
-const h = new Discord.Client();
-const i = new Discord.Client();
-const j = new Discord.Client();
-const k = new Discord.Client();
-const l = new Discord.Client();
-const m = new Discord.Client();
-const n = new Discord.Client();
-const o = new Discord.Client();
-const p = new Discord.Client();
-const q = new Discord.Client();
-const r = new Discord.Client();
-const s = new Discord.Client();
-const t = new Discord.Client();
-const u = new Discord.Client();
-const v = new Discord.Client();
-const w = new Discord.Client();
-const x = new Discord.Client();
-const y = new Discord.Client();
-const z = new Discord.Client();
-const a = "507192062320443402"
+const client2 = new Discord.Client();
+const myid = [''];// ايدي حسابك
+const prefix = ['#'];
+
+client.on('ready', () => {
+   console.log(`----------------`);
+   console.log(`Credit Farmm - Script By : n3k4a `);
+   console.log(`----------------`);
+   console.log(`Loadinng`);
+   console.log(`Loadinng.`);
+   console.log(`Loadinng..`);
+   console.log(`Loadinng...`);
+   console.log(`This Bots Online ' `);
+   console.log(`----------------`);
+});
+
+client2.on('ready', () => {
+   console.log(`----------------`);
+   console.log(`2 Account Online ✩' `);
+   console.log(`----------------`);
+});
 
 
-client.on("ready", () => {
-console.log('By Cutie Pie');
- console.log(`Logged in as ${client.user.tag}!`);
-});
-bot.on('message', msg => {
- if (msg.author.id !== a) return;
- if (msg.content.startsWith('.')) {
-		if (!msg.member.voiceChannel) return
-		msg.member.voiceChannel.join()
-}
-});
-bot.on('message', msg => {
- if (msg.author.id !== a) return;
- if (msg.content.startsWith('..')) {
-		if (!msg.member.voiceChannel) return
-		msg.member.voiceChannel.leave()
-}
-});
-mtra9a.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-mtra9a.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-Bot.on('message', msg => {
- if (msg.author.id !== a) return;
- if (msg.content.startsWith('.')) {
-		if (!msg.member.voiceChannel) return
-		msg.member.voiceChannel.join()
-}
-});
-Bot.on('message', msg => {
- if (msg.author.id !== a) return;
- if (msg.content.startsWith('..')) {
-		if (!msg.member.voiceChannel) return
-		msg.member.voiceChannel.leave()
-}
-});
-b.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-b.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-c.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-c.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-d.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-d.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-e.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-e.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-f.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-f.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-g.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-g.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-h.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-h.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-i.on('message', msg => {
- if (msg.author.id !== a) return;
- if (msg.content.startsWith('.')) {
-		if (!msg.member.voiceChannel) return
-		msg.member.voiceChannel.join()
-}
-});
-i.on('message', msg => {
- if (msg.author.id !== a) return;
- if (msg.content.startsWith('..')) {
-		if (!msg.member.voiceChannel) return
-		msg.member.voiceChannel.leave()
-}
-});
-j.on('message', msg => {
- if (msg.author.id !== a) return;
- if (msg.content.startsWith('.')) {
-		if (!msg.member.voiceChannel) return
-		msg.member.voiceChannel.join()
-}
-});
-j.on('message', msg => {
- if (msg.author.id !== a) return;
- if (msg.content.startsWith('..')) {
-		if (!msg.member.voiceChannel) return
-		msg.member.voiceChannel.leave()
-}
-});
-k.on('message', msg => {
- if (msg.author.id !== a) return;
- if (msg.content.startsWith('.')) {
-		if (!msg.member.voiceChannel) return
-		msg.member.voiceChannel.join()
-}
-});
-k.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-l.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-l.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-m.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-m.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-o.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-o.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-p.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-p.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-q.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-q.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-r.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-r.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-s.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-s.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-t.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-t.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-u.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-u.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-v.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-v.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-w.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-w.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-x.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-x.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-y.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-y.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
-z.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('.')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.join()
-   }
-   });
-z.on('message', msg => {
-	if (msg.author.id !== a) return;
-	if (msg.content.startsWith('..')) {
-		   if (!msg.member.voiceChannel) return
-		   msg.member.voiceChannel.leave()
-   }
-   });
 
 client.on('message', message => {
-  if (message.content.startsWith('hah')) {
-    const voiceChannel = message.member.voiceChannel;
-    voiceChannel.join()
-      .then(connnection => {
-        const stream = ytdl("https://www.youtube.com/watch?v=HHn2tvazfTk", { filter: 'audioonly' });
-        const dispatcher = connnection.playStream(stream);
-                dispatcher.on('end', () => voiceChannel.leave());
+    if(message.content === prefix+'راتب'){
+        message.channel.send('#daily')
+    }
+});
 
-      });
+client.on('message', message => {
+    if(message.content === prefix+'مبلغ'){
+        message.channel.send('#credits')
+    }
+});
+
+client.on('message', message => {
+    if(message.content === prefix+'ريب'){
+        message.channel.send("#rep "+"<@" + myid + ">")
+    }
+});
+
+client.on('message', message => {
+if (message.content === prefix+'spam') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 90000; x++) {
+        message.channel.send(`**NEW spam code 2019 by n3k4a  - الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر ر الله اكبر الله اكبر **[ " ${x} " ]`)
+          .then(m => {
+            count++;
+          })
+          
+        }
+      }
+});
+
+client.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+
+
+if (command == "تحدث") {
+let rank = message.guild.member(message.author).roles.find('name', 'Role.n3k4a'); //لازم تعمل الرتبه دي في السيرفر  Role.n3k4a
+if (!rank) return message.reply(' ')
+  message.channel.send(args.join("  "))
+    message.delete();
   }
-})
+});
+
+client2.on('message', message => {
+    if(message.content === prefix+'راتب'){
+        message.channel.send('#daily')
+    }
+});
+
+client2.on('message', message => {
+    if(message.content === prefix+'مبلغ'){
+        message.channel.send('#credits')
+    }
+});
+
+client2.on('message', message => {
+    if(message.content === prefix+'ريب'){
+        message.channel.send("#rep "+"<@" + myid + ">") 
+    }
+});
+
+client2.on('message', message => {
+if (message.content === prefix+'spam') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 90000; x++) {
+        message.channel.send(`**NEW spam code 2019 by n3k4a  - الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر الله اكبر ر الله اكبر الله اكبر **[ " ${x} " ]`)
+          .then(m => {
+            count++;
+          })
+          
+        }
+      }
+});
+
+client2.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+
+
+if (command == "تحدث") {
+let rank = message.guild.member(message.author).roles.find('name', 'Role.n3k4a');
+if (!rank) return message.reply(' ')
+  message.channel.send(args.join("  "))
+    message.delete();
+  }
+});
+
+
+client.login(process.env.TOKEN);
+client2.login(process.env.TOKEN2);
