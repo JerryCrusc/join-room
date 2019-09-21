@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const client2 = new Discord.Client();
-const myid = [''];// ايدي حسابك
+const myid = ['507192062320443402'];// ايدي حسابك
 const prefix = ['#'];
 
 client.on('ready', () => {
